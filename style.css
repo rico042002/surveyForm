@@ -44,6 +44,10 @@ textarea {
     color: black;
 }
 
+.hidden {
+    display: none;
+}
+
 @media(max-width: 768px) {
   select, label {
     font-size: 2rem;

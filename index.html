@@ -13,7 +13,10 @@
     <img src="kame.svg" alt="Goku Kame-san Japanese kata" class="center">
     <h1 id="title">Anime Form Survey</h1>
     <p id="description"><strong>Anime has the most fans? Who is the true KING of the Big Four?</strong></p>
-    <form id="survey-form" action="/animeForm" method="POST">
+    <form id="survey-form" action="/animeForm" method="POST" data-netlify="true"  netlify-honeypot="bot-field">
+        <p class="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
         <div>
     <label for="name" id="name-label">*Name:</label>
             <input id="name" type="text" placeholder="Enter name" name="age" required>
