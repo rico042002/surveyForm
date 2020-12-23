@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(7, 32, 131);
+    /*font*/
+    color: white;
+    font-family: 'Kalam', cursive;
+}
+
+
+form{
+    text-align: center;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#overlay {
+    background-color: rgb(248, 91, 26);
+    border-radius: 40px;
+}
+
+#title, #description {
+    text-align: center
+}
+
+button {
+    background-color: rgb(138, 146, 148);
+    border: none;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(0,0,0);
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+textarea {
+    font-family: inherit;
+    color: black;
+}
+
+@media(max-width: 768px) {
+  select, label {
+    font-size: 2rem;
+  }
+
+
+  input[type="radio"] {
+    font-size: 2rem;
+  }
+
+  #submit {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}

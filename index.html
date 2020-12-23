@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="overlay">
+    <img src="kame.svg" alt="Goku Kame-san Japanese kata" class="center">
+    <h1 id="title">Anime Form Survey</h1>
+    <p id="description"><strong>Anime has the most fans? Who is the true KING of the Big Four?</strong></p>
+    <form id="survey-form" action="/animeForm" method="POST">
+        <div>
+    <label for="name" id="name-label">*Name:</label>
+            <input id="name" type="text" placeholder="Enter name" name="age" required>
+        </div>
+        <br>
+        <div>
+            <label for="email" id="email-label">*E-mail:</label>
+            <input id="email" type="email" placeholder="Enter e-mail" size="30" name="email" required>
+        </div>
+        <br>
+            <div>
+            <label for="number" id="number-label">*Age</label>
+            <input id="number" type="number" placeholder="18" size="4" name="age" min="10" max="99" required>
+            </div>
+        <div id="dropdown">
+            <h2>Who is your favorite anime character?</h2>
+            <select name="heros">
+                <option value="goku">Goku</option>
+                <option value="ichigo">Ichigo</option>
+                <option value="luffy">Luffy</option>
+                <option value="naruto">Naruto</option>
+            </select>
+            <br><br>
+        </div>
+        <div>
+            <h2>Who has the coolest finishing move?</h2>
+        <div>
+            <input type="radio" id="gokumove" name="moves" value="k-wave" checked>
+            <label for="gokumove">Kamehameha(Goku)</label>
+        </div>
+            <div>
+                <input type="radio" id="ichigomove" name="moves" value="getsuga">
+                <label for="ichigomove">Getsuga Tenshou(Ichigo)</label>
+            </div>
+            <div>
+                <input type="radio" id="luffymove" name="moves" value="gugmgum">
+                <label for="luffymove">Gum-Gum(Luffy)</label>
+            </div>
+            <div>
+                <input type="radio" id="narutomove" name="moves" value="rasengan">
+                <label for="narutomove">Rasengan(Naruto)</label>
+            </div>
+        </div>
+        <div>
+            <h2>Best looking girlfriend?</h2>
+            <div>
+                <input type="checkbox" id="chi-chi" name="women" value="chi-chi" checked>
+                <label class="checkbox-inline check" for="girlFriends">Chi-Chi</label>
+            </div>
+            <div>
+                <input type="checkbox" id="orihime" name="women" value="orihime">
+                <label class="checkbox-inline check" for="girlFriends">Orihime</label>
+            </div>
+            <div>
+                <input type="checkbox" id="hancock" name="women" value="hancock">
+                <label class="checkbox-inline check" for="girlFriends">Hancock</label>
+            </div>
+            <div>
+                <input type="checkbox" id="hinata" name="women" value="hinata">
+                <label class="checkbox-inline check" for="girlFriends">Hinata</label>
+            </div>
+        </div>
+        <br>
+        <div>
+            <div>
+            <strong><label for="story">Comments: Do you feel like Deku or Natsu should have made the cut?
+                Is there an shonen anime you feel was left out?</label></strong>
+            </div>
+            <br>
+        </div>
+        <textarea id="story" rows="5" cols="33" placeholder="comment here..."></textarea>
+        <br>
+        <button id="submit">Submit Form</button>
+    </form>
+    <br>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script type="text/javascript" src="jsfile.js"></script>
+</body>
+</html>
